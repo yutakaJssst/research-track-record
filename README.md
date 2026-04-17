@@ -56,7 +56,7 @@ python3 -m http.server 8765
   "category": "international",    // "international" | "domestic"
   "status": "pending",            // "accepted" | "rejected" | "pending"
   "paperType": "full",            // "full" | "short" | "poster" | "fast-abstract" | null
-  "role": "first-author",         // "first-author" | "co-author" | "pi" | "co-pi" | "unknown"
+  "role": "first-author",         // "first-author" | "last-author" | "co-author" | "pi" | "co-pi" | "unknown"
   "coauthors": ["共著者A"],
   "notes": "備考（例: Conditional を経て採択）"
 }

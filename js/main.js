@@ -15,6 +15,7 @@ const TYPE_LABEL = {
 
 const ROLE_LABEL = {
   "first-author": "First author",
+  "last-author": "Last author",
   "co-author": "Co-author",
   "pi": "代表",
   "co-pi": "分担",
