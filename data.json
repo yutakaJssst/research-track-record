@@ -558,7 +558,9 @@
       "status": "accepted",
       "paperType": "full",
       "role": "unknown",
-      "coauthors": ["Tier IV"],
+      "coauthors": [
+        "Tier IV"
+      ],
       "notes": "Tier IV との共同研究"
     },
     {
@@ -573,7 +575,9 @@
       "status": "rejected",
       "paperType": "full",
       "role": "unknown",
-      "coauthors": ["産総研 (AIST)"],
+      "coauthors": [
+        "産総研 (AIST)"
+      ],
       "notes": "産業技術総合研究所との共同研究"
     },
     {
@@ -647,7 +651,7 @@
       "category": "international",
       "status": "accepted",
       "paperType": "full",
-      "role": "unknown",
+      "role": "first-author",
       "coauthors": [],
       "notes": ""
     },
@@ -708,7 +712,9 @@
       "status": "accepted",
       "paperType": "short",
       "role": "co-author",
-      "coauthors": ["野本"],
+      "coauthors": [
+        "野本"
+      ],
       "notes": "野本氏筆頭"
     },
     {
@@ -723,7 +729,9 @@
       "status": "accepted",
       "paperType": "short",
       "role": "co-author",
-      "coauthors": ["阿部"],
+      "coauthors": [
+        "阿部"
+      ],
       "notes": "阿部氏筆頭"
     },
     {
@@ -743,7 +751,7 @@
     },
     {
       "id": "ipsj-journal-2025-kodama",
-      "year": 2025,
+      "year": 2026,
       "title": "情報処理学会論文誌 (児玉)",
       "venue": "情報処理学会論文誌",
       "venueFull": "情報処理学会論文誌",
@@ -753,7 +761,9 @@
       "status": "accepted",
       "paperType": "full",
       "role": "co-author",
-      "coauthors": ["児玉"],
+      "coauthors": [
+        "児玉"
+      ],
       "notes": "児玉氏筆頭"
     },
     {
@@ -788,7 +798,7 @@
     },
     {
       "id": "ism-journal-2025",
-      "year": 2025,
+      "year": 2026,
       "title": "統計数理ジャーナル",
       "venue": "統計数理",
       "venueFull": "統計数理 (統計数理研究所)",
@@ -834,7 +844,7 @@
     {
       "id": "safecomp-2026-tier4",
       "year": 2026,
-      "title": "SAFECOMP 2026 (Tier IV)",
+      "title": "SAFECOMP 2026 (自動運転)",
       "venue": "SAFECOMP",
       "venueFull": "International Conference on Computer Safety, Reliability, and Security",
       "kind": "paper",
@@ -843,13 +853,15 @@
       "status": "pending",
       "paperType": "full",
       "role": "unknown",
-      "coauthors": ["Tier IV"],
+      "coauthors": [
+        "Tier IV"
+      ],
       "notes": "Tier IV との共同研究、結果待ち"
     },
     {
       "id": "safecomp-2026-jasper",
       "year": 2026,
-      "title": "SAFECOMP 2026 (Jasper)",
+      "title": "SAFECOMP 2026 (ISO 26262,SOTIF,UL 4600)",
       "venue": "SAFECOMP",
       "venueFull": "International Conference on Computer Safety, Reliability, and Security",
       "kind": "paper",
@@ -858,7 +870,9 @@
       "status": "pending",
       "paperType": "full",
       "role": "unknown",
-      "coauthors": ["Jasper"],
+      "coauthors": [
+        "Jasper"
+      ],
       "notes": "Jasper との共同研究、結果待ち"
     },
     {
