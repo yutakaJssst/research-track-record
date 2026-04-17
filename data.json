@@ -776,8 +776,8 @@
       "type": "conference",
       "category": "international",
       "status": "accepted",
-      "paperType": "full",
-      "role": "unknown",
+      "paperType": "fast-abstract",
+      "role": "last-author",
       "coauthors": [],
       "notes": ""
     },
