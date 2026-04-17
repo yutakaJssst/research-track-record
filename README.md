@@ -26,6 +26,22 @@ python3 -m http.server 8765
 
 ## データの追加・更新
 
+### 方法1: 管理画面 (admin.html) から
+
+`/admin.html` にアクセスし、GitHub の **Fine-grained Personal Access Token (PAT)** を入力すると、ブラウザから直接 `data.json` を編集・コミットできます。
+
+1. [GitHub の Fine-grained PAT 作成ページ](https://github.com/settings/personal-access-tokens/new) を開く
+2. **Repository access**: `Only select repositories` → `yutakaJssst/research-track-record` を選択
+3. **Permissions → Repository permissions → Contents** を `Read and write` に設定
+4. 有効期限は用途に応じて（例: 90日）
+5. 発行された `github_pat_...` をコピーして管理画面に貼り付け
+
+トークンはブラウザの `sessionStorage` にのみ保存され、タブを閉じると破棄されます。
+
+管理画面で追加・編集・削除操作を行い、最後に「コミット & push」ボタンを押すと GitHub に反映され、数十秒後に Pages が再ビルドされます。
+
+### 方法2: `data.json` を直接編集
+
 `data.json` の `items` 配列にエントリを追加します。
 
 ```jsonc

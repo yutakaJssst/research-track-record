@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>管理画面 — Research Track Record</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/admin.css" />
+  <script src="./js/admin.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>管理画面</h1>
+      <p class="subtitle">Research Track Record — データ編集</p>
+      <p class="last-updated">
+        <a href="./index.html">← 公開ページへ戻る</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="auth-section" id="auth-section">
+      <h2>認証</h2>
+      <p class="warn">
+        GitHub の <strong>Fine-grained Personal Access Token (PAT)</strong> を入力してください。
+        <br>必要な権限: <code>Contents: Read and write</code> on <code>yutakaJssst/research-track-record</code>。
+        <br>トークンはこのタブの sessionStorage にのみ保持され、タブを閉じると消えます。
+      </p>
+      <div class="auth-form">
+        <label>
+          <span>Personal Access Token</span>
+          <input type="password" id="pat-input" placeholder="github_pat_... / ghp_..." autocomplete="off" />
+        </label>
+        <button id="btn-load" type="button">データ読込</button>
+        <span class="auth-status" id="auth-status"></span>
+      </div>
+    </section>
+
+    <section class="editor-section" id="editor-section" hidden>
+      <div class="editor-header">
+        <h2>エントリ一覧 <span class="item-count"><span id="editor-count">0</span> 件</span></h2>
+        <div class="editor-actions">
+          <button id="btn-reload" type="button" class="btn-secondary">再読込</button>
+          <button id="btn-add" type="button">+ 新規追加</button>
+        </div>
+      </div>
+      <div class="editor-list" id="editor-list"></div>
+      <div class="dirty-indicator" id="dirty-indicator" hidden>
+        <span id="dirty-text">未保存の変更があります</span>
+      </div>
+    </section>
+
+    <section class="commit-section" id="commit-section" hidden>
+      <h2>GitHub にコミット</h2>
+      <label class="commit-msg">
+        <span>コミットメッセージ</span>
+        <input type="text" id="commit-message" value="Update data.json" />
+      </label>
+      <button id="btn-commit" type="button" class="btn-primary">コミット &amp; push</button>
+      <span class="commit-status" id="commit-status"></span>
+    </section>
+  </main>
+
+  <!-- Edit dialog (modal) -->
+  <dialog id="edit-dialog" class="edit-dialog">
+    <form method="dialog" id="edit-form">
+      <h2 id="edit-title">新規エントリ</h2>
+      <div class="form-grid">
+        <label>
+          <span>年 *</span>
+          <input name="year" type="number" min="1900" max="2100" required />
+        </label>
+        <label>
+          <span>タイトル *</span>
+          <input name="title" type="text" required />
+        </label>
+        <label>
+          <span>Venue (略称) *</span>
+          <input name="venue" type="text" required />
+        </label>
+        <label class="span-2">
+          <span>Venue (正式名称)</span>
+          <input name="venueFull" type="text" />
+        </label>
+        <label>
+          <span>区分 *</span>
+          <select name="kind" required>
+            <option value="paper">論文</option>
+            <option value="grant">予算</option>
+          </select>
+        </label>
+        <label>
+          <span>種別 *</span>
+          <select name="type" required>
+            <option value="conference">国際会議</option>
+            <option value="workshop">ワークショップ</option>
+            <option value="journal">論文誌</option>
+            <option value="grant">予算</option>
+          </select>
+        </label>
+        <label>
+          <span>国/国際 *</span>
+          <select name="category" required>
+            <option value="international">国際</option>
+            <option value="domestic">国内</option>
+          </select>
+        </label>
+        <label>
+          <span>結果 *</span>
+          <select name="status" required>
+            <option value="accepted">採択</option>
+            <option value="rejected">不採択</option>
+            <option value="pending">結果待ち</option>
+          </select>
+        </label>
+        <label>
+          <span>投稿区分</span>
+          <select name="paperType">
+            <option value="">—</option>
+            <option value="full">Full</option>
+            <option value="short">Short</option>
+            <option value="poster">Poster</option>
+            <option value="fast-abstract">Fast Abstract</option>
+          </select>
+        </label>
+        <label>
+          <span>役割</span>
+          <select name="role">
+            <option value="unknown">未設定</option>
+            <option value="first-author">First author</option>
+            <option value="co-author">Co-author</option>
+            <option value="pi">代表</option>
+            <option value="co-pi">分担</option>
+          </select>
+        </label>
+        <label class="span-2">
+          <span>共著者 (カンマ区切り)</span>
+          <input name="coauthors" type="text" placeholder="例: 野本, 阿部" />
+        </label>
+        <label class="span-2">
+          <span>備考</span>
+          <textarea name="notes" rows="2"></textarea>
+        </label>
+        <label class="span-2">
+          <span>ID (空欄なら自動生成)</span>
+          <input name="id" type="text" pattern="[a-z0-9\-]+" />
+        </label>
+      </div>
+      <div class="form-actions">
+        <button type="button" id="btn-cancel" class="btn-secondary">キャンセル</button>
+        <button type="submit" class="btn-primary">適用</button>
+      </div>
+    </form>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>変更は「コミット &amp; push」まで GitHub に反映されません。</p>
+    </div>
+  </footer>
+</body>
+</html>
