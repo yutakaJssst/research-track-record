@@ -807,7 +807,7 @@
       "category": "domestic",
       "status": "accepted",
       "paperType": "full",
-      "role": "unknown",
+      "role": "last-author",
       "coauthors": [],
       "notes": ""
     },
