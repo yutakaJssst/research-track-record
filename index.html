@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research Track Record</title>
+  <meta name="description" content="論文投稿・予算申請の履歴（採択・不採択・結果待ちを含む）" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+  <script src="./js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Research Track Record</h1>
+      <p class="subtitle">論文投稿・予算申請の履歴 <span id="owner-name"></span></p>
+      <p class="last-updated">最終更新: <span id="last-updated"></span></p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="summary" aria-label="サマリー">
+      <div class="card card--total">
+        <span class="card-label">総件数</span>
+        <span class="card-value" id="stat-total">–</span>
+      </div>
+      <div class="card card--accepted">
+        <span class="card-label">採択</span>
+        <span class="card-value" id="stat-accepted">–</span>
+      </div>
+      <div class="card card--rejected">
+        <span class="card-label">不採択</span>
+        <span class="card-value" id="stat-rejected">–</span>
+      </div>
+      <div class="card card--pending">
+        <span class="card-label">結果待ち</span>
+        <span class="card-value" id="stat-pending">–</span>
+      </div>
+      <div class="card card--rate">
+        <span class="card-label">採択率 (確定分)</span>
+        <span class="card-value" id="stat-rate">–</span>
+      </div>
+    </section>
+
+    <section class="charts" aria-label="グラフ">
+      <div class="chart-block">
+        <h2>年度別 投稿・申請件数</h2>
+        <div class="chart-wrapper">
+          <canvas id="chart-year"></canvas>
+        </div>
+      </div>
+
+      <div class="chart-block">
+        <h2>種別 × 結果</h2>
+        <div class="chart-wrapper">
+          <canvas id="chart-type"></canvas>
+        </div>
+      </div>
+
+      <div class="chart-block">
+        <h2>採択率（種別別）</h2>
+        <div class="chart-wrapper">
+          <canvas id="chart-rate"></canvas>
+        </div>
+      </div>
+
+      <div class="chart-block">
+        <h2>国内 / 国際</h2>
+        <div class="chart-wrapper">
+          <canvas id="chart-category"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="list-section" aria-label="一覧">
+      <div class="list-header">
+        <h2>一覧</h2>
+        <div class="filters">
+          <label>
+            <span>年</span>
+            <select id="filter-year"><option value="">すべて</option></select>
+          </label>
+          <label>
+            <span>区分</span>
+            <select id="filter-kind">
+              <option value="">すべて</option>
+              <option value="paper">論文</option>
+              <option value="grant">予算</option>
+            </select>
+          </label>
+          <label>
+            <span>種別</span>
+            <select id="filter-type">
+              <option value="">すべて</option>
+              <option value="conference">国際会議</option>
+              <option value="workshop">ワークショップ</option>
+              <option value="journal">論文誌</option>
+              <option value="grant">予算</option>
+            </select>
+          </label>
+          <label>
+            <span>結果</span>
+            <select id="filter-status">
+              <option value="">すべて</option>
+              <option value="accepted">採択</option>
+              <option value="rejected">不採択</option>
+              <option value="pending">結果待ち</option>
+            </select>
+          </label>
+          <label class="search">
+            <span>検索</span>
+            <input type="search" id="filter-search" placeholder="venue / タイトル" />
+          </label>
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table id="items-table">
+          <thead>
+            <tr>
+              <th data-sort="year">年</th>
+              <th data-sort="title">タイトル</th>
+              <th data-sort="venue">Venue</th>
+              <th data-sort="type">種別</th>
+              <th data-sort="category">国/国際</th>
+              <th data-sort="paperType">投稿区分</th>
+              <th data-sort="role">役割</th>
+              <th data-sort="status">結果</th>
+              <th>備考</th>
+            </tr>
+          </thead>
+          <tbody id="items-tbody"></tbody>
+        </table>
+      </div>
+      <p class="list-count"><span id="visible-count">0</span> / <span id="total-count">0</span> 件</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>データは <code>data.json</code> を編集することで追記・修正できます。</p>
+      <p><a href="https://github.com/yutakaJssst/research-track-record" rel="noopener">GitHub リポジトリ</a></p>
+    </div>
+  </footer>
+</body>
+</html>
