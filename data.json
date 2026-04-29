@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Yutaka Matsuno",
     "affiliation": "Nihon University",
-    "lastUpdated": "2026-04-17",
+    "lastUpdated": "2026-04-29",
     "description": "論文投稿・予算申請の履歴（採択・不採択含む）"
   },
   "items": [
@@ -889,6 +889,21 @@
       "role": "unknown",
       "coauthors": [],
       "notes": "結果待ち"
+    },
+    {
+      "id": "ipsj-journal-2026-icse-seet",
+      "year": 2026,
+      "title": "情報処理学会論文誌 (ICSE-SEET拡張)",
+      "venue": "情報処理学会論文誌",
+      "venueFull": "情報処理学会論文誌",
+      "kind": "paper",
+      "type": "journal",
+      "category": "domestic",
+      "status": "pending",
+      "paperType": "full",
+      "role": "last-author",
+      "coauthors": [],
+      "notes": "ICSE-SEET 論文の拡張版、結果待ち"
     }
   ]
 }
