@@ -850,13 +850,13 @@
       "kind": "paper",
       "type": "conference",
       "category": "international",
-      "status": "pending",
+      "status": "rejected",
       "paperType": "full",
       "role": "unknown",
       "coauthors": [
         "Tier IV"
       ],
-      "notes": "Tier IV との共同研究、結果待ち"
+      "notes": "Tier IV との共同研究、不採択"
     },
     {
       "id": "safecomp-2026-jasper",
@@ -867,13 +867,13 @@
       "kind": "paper",
       "type": "conference",
       "category": "international",
-      "status": "pending",
+      "status": "accepted",
       "paperType": "full",
       "role": "unknown",
       "coauthors": [
         "Jasper"
       ],
-      "notes": "Jasper との共同研究、結果待ち"
+      "notes": "Jasper との共同研究、条件付き採択"
     },
     {
       "id": "re-next-2026",
@@ -904,6 +904,40 @@
       "role": "last-author",
       "coauthors": [],
       "notes": "ICSE-SEET 論文の拡張版、結果待ち"
+    },
+    {
+      "id": "aiese-2026-yoshinaga",
+      "year": 2026,
+      "title": "AIESE 2026 (吉永)",
+      "venue": "AIESE",
+      "venueFull": "International Conference on Artificial Intelligence-empowered Software Engineering",
+      "kind": "paper",
+      "type": "conference",
+      "category": "international",
+      "status": "pending",
+      "paperType": "full",
+      "role": "last-author",
+      "coauthors": [
+        "吉永"
+      ],
+      "notes": "吉永 (M1) 筆頭、結果待ち"
+    },
+    {
+      "id": "aiese-2026-tokuno",
+      "year": 2026,
+      "title": "AIESE 2026 (徳野)",
+      "venue": "AIESE",
+      "venueFull": "International Conference on Artificial Intelligence-empowered Software Engineering",
+      "kind": "paper",
+      "type": "conference",
+      "category": "international",
+      "status": "pending",
+      "paperType": "full",
+      "role": "last-author",
+      "coauthors": [
+        "徳野"
+      ],
+      "notes": "徳野 (M2) 筆頭、結果待ち"
     }
   ]
 }
