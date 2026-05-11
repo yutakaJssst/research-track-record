@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Yutaka Matsuno",
     "affiliation": "Nihon University",
-    "lastUpdated": "2026-04-29",
+    "lastUpdated": "2026-05-11",
     "description": "論文投稿・予算申請の履歴（採択・不採択含む）"
   },
   "items": [
@@ -938,6 +938,80 @@
         "徳野"
       ],
       "notes": "徳野 (M2) 筆頭、結果待ち"
+    },
+    {
+      "id": "icsme-2026-yoda",
+      "year": 2026,
+      "title": "ICSME 2026 VER (依田)",
+      "venue": "ICSME",
+      "venueFull": "IEEE International Conference on Software Maintenance and Evolution, Vision and Emerging Results Track",
+      "kind": "paper",
+      "type": "conference",
+      "category": "international",
+      "status": "pending",
+      "paperType": "full",
+      "role": "last-author",
+      "coauthors": [
+        "Minami Yoda",
+        "Jialong Li",
+        "Yasuyuki Tahara",
+        "Yuichi Sei"
+      ],
+      "notes": "Rethinking Success in LLM-Based Decompilation: A Staged Evaluation Across Benchmarks and Real Systems、依田筆頭、結果待ち"
+    },
+    {
+      "id": "sassur-2026-matsuno",
+      "year": 2026,
+      "title": "SASSUR 2026 (Strategy-Aware Confidence)",
+      "venue": "SASSUR",
+      "venueFull": "International Workshop on Next Generation of System Assurance Approaches for Critical Systems (SAFECOMP Workshop)",
+      "kind": "paper",
+      "type": "workshop",
+      "category": "international",
+      "status": "pending",
+      "paperType": "full",
+      "role": "first-author",
+      "coauthors": [
+        "Michio Hayashi",
+        "Tomoyuki Tsuchiya"
+      ],
+      "notes": "Strategy-Aware Confidence Assessment with Stakeholder Consensus for Level 4 Automated Driving Assurance Cases、結果待ち"
+    },
+    {
+      "id": "sassur-2026-furuuchi",
+      "year": 2026,
+      "title": "SASSUR 2026 (古内)",
+      "venue": "SASSUR",
+      "venueFull": "International Workshop on Next Generation of System Assurance Approaches for Critical Systems (SAFECOMP Workshop)",
+      "kind": "paper",
+      "type": "workshop",
+      "category": "international",
+      "status": "pending",
+      "paperType": "full",
+      "role": "last-author",
+      "coauthors": [
+        "Yuto Furuuchi",
+        "Hideaki Kodama",
+        "Minami Yoda"
+      ],
+      "notes": "AHP-Based Parameter Adjustment for Updating Assurance Cases of Automated Driving Systems、古内筆頭、結果待ち"
+    },
+    {
+      "id": "aiese-2026-yoda",
+      "year": 2026,
+      "title": "AIESE 2026 (依田・ファッションAI)",
+      "venue": "AIESE",
+      "venueFull": "International Conference on Artificial Intelligence-empowered Software Engineering",
+      "kind": "paper",
+      "type": "conference",
+      "category": "international",
+      "status": "pending",
+      "paperType": "full",
+      "role": "last-author",
+      "coauthors": [
+        "依田先生"
+      ],
+      "notes": "依田先生筆頭、ファッションAI、投稿中"
     }
   ]
 }
