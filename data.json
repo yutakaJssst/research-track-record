@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Yutaka Matsuno",
     "affiliation": "Nihon University",
-    "lastUpdated": "2026-05-16",
+    "lastUpdated": "2026-05-23",
     "description": "論文投稿・予算申請の履歴（採択・不採択含む）"
   },
   "items": [
@@ -914,13 +914,13 @@
       "kind": "paper",
       "type": "conference",
       "category": "international",
-      "status": "pending",
+      "status": "accepted",
       "paperType": "full",
       "role": "last-author",
       "coauthors": [
         "吉永"
       ],
-      "notes": "吉永 (M1) 筆頭、結果待ち"
+      "notes": "吉永 (M1) 筆頭、採択"
     },
     {
       "id": "aiese-2026-tokuno",
@@ -931,13 +931,13 @@
       "kind": "paper",
       "type": "conference",
       "category": "international",
-      "status": "pending",
+      "status": "accepted",
       "paperType": "full",
       "role": "last-author",
       "coauthors": [
         "徳野"
       ],
-      "notes": "徳野 (M2) 筆頭、結果待ち"
+      "notes": "徳野 (M2) 筆頭、採択"
     },
     {
       "id": "icsme-2026-yoda",
@@ -1005,13 +1005,13 @@
       "kind": "paper",
       "type": "conference",
       "category": "international",
-      "status": "pending",
+      "status": "accepted",
       "paperType": "full",
       "role": "last-author",
       "coauthors": [
         "依田先生"
       ],
-      "notes": "依田先生筆頭、ファッションAI、投稿中"
+      "notes": "依田先生筆頭、ファッションAI、採択"
     }
   ]
 }
