@@ -915,7 +915,7 @@
       "type": "conference",
       "category": "international",
       "status": "accepted",
-      "paperType": "full",
+      "paperType": "short",
       "role": "last-author",
       "coauthors": [
         "吉永"
@@ -932,7 +932,7 @@
       "type": "conference",
       "category": "international",
       "status": "accepted",
-      "paperType": "full",
+      "paperType": "short",
       "role": "last-author",
       "coauthors": [
         "徳野"
@@ -1006,7 +1006,7 @@
       "type": "conference",
       "category": "international",
       "status": "accepted",
-      "paperType": "full",
+      "paperType": "short",
       "role": "last-author",
       "coauthors": [
         "依田先生"
