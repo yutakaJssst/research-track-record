@@ -968,14 +968,14 @@
       "kind": "paper",
       "type": "workshop",
       "category": "international",
-      "status": "pending",
+      "status": "accepted",
       "paperType": "full",
       "role": "first-author",
       "coauthors": [
         "Michio Hayashi",
         "Tomoyuki Tsuchiya"
       ],
-      "notes": "Strategy-Aware Confidence Assessment with Stakeholder Consensus for Level 4 Automated Driving Assurance Cases、結果待ち"
+      "notes": "Strategy-Aware Confidence Assessment with Stakeholder Consensus for Level 4 Automated Driving Assurance Cases、採択"
     },
     {
       "id": "sassur-2026-furuuchi",
@@ -986,7 +986,7 @@
       "kind": "paper",
       "type": "workshop",
       "category": "international",
-      "status": "pending",
+      "status": "rejected",
       "paperType": "full",
       "role": "last-author",
       "coauthors": [
@@ -994,7 +994,7 @@
         "Hideaki Kodama",
         "Minami Yoda"
       ],
-      "notes": "AHP-Based Parameter Adjustment for Updating Assurance Cases of Automated Driving Systems、古内筆頭、結果待ち"
+      "notes": "AHP-Based Parameter Adjustment for Updating Assurance Cases of Automated Driving Systems、古内筆頭、不採択"
     },
     {
       "id": "aiese-2026-yoda",
