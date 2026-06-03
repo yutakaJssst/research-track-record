@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Yutaka Matsuno",
     "affiliation": "Nihon University",
-    "lastUpdated": "2026-05-23",
+    "lastUpdated": "2026-06-03",
     "description": "論文投稿・予算申請の履歴（採択・不採択含む）"
   },
   "items": [
@@ -840,6 +840,21 @@
       "role": "pi",
       "coauthors": [],
       "notes": ""
+    },
+    {
+      "id": "crest-2026",
+      "year": 2026,
+      "title": "CREST 2026",
+      "venue": "CREST",
+      "venueFull": "JST CREST (戦略的創造研究推進事業)",
+      "kind": "grant",
+      "type": "grant",
+      "category": "domestic",
+      "status": "pending",
+      "paperType": null,
+      "role": "pi",
+      "coauthors": [],
+      "notes": "申請、結果待ち"
     },
     {
       "id": "safecomp-2026-tier4",
