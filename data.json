@@ -2,7 +2,7 @@
   "meta": {
     "owner": "Yutaka Matsuno",
     "affiliation": "Nihon University",
-    "lastUpdated": "2026-06-03",
+    "lastUpdated": "2026-06-19",
     "description": "論文投稿・予算申請の履歴（採択・不採択含む）"
   },
   "items": [
@@ -919,6 +919,23 @@
       "role": "last-author",
       "coauthors": [],
       "notes": "ICSE-SEET 論文の拡張版、不採択。改訂して再投稿予定"
+    },
+    {
+      "id": "compsoft-2026-kataoka",
+      "year": 2026,
+      "title": "コンピュータソフトウェア (片岡)",
+      "venue": "コンピュータソフトウェア",
+      "venueFull": "日本ソフトウェア科学会 論文誌「コンピュータソフトウェア」",
+      "kind": "paper",
+      "type": "journal",
+      "category": "domestic",
+      "status": "pending",
+      "paperType": "full",
+      "role": "last-author",
+      "coauthors": [
+        "片岡"
+      ],
+      "notes": "片岡さん筆頭、情報処理学会論文誌で不採択後に再投稿"
     },
     {
       "id": "aiese-2026-yoshinaga",
